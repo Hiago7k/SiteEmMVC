@@ -1,8 +1,11 @@
-﻿@{
+﻿@model HomeModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Bem Vindo</h1>
+    <h1 class="display-4">Bem Vindo, @Model.Nome</h1>
     <p>Site do Hiago em MVC </p>
+    <span>Seu e-mail: @Model.Email</span>
 </div>

@@ -9,7 +9,12 @@ namespace SiteEmMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            HomeModel home = new HomeModel();
+            home.Nome = "Hiago Mendes";
+            home.Email = "hiago7k@gmail.com";
+
+
+            return View(home);
         }
 
         public IActionResult Privacy()
